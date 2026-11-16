@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="lang-en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Om Fabrication Patan</title>
+<meta name="description" content="Om Fabrication, Patan (Gujarat): MS sheds, tension canopies, SS and glass railings, aluminium windows and partitions, laser-cut jali gates. Call 98250 17324.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Hind+Vadodara:wght@400;500;600&family=Mukta+Vaani:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a steel-dark workshop frame with brand saffron for every action; numbered service rows, a real-work gallery, and the jali panels shown as cut steel. */
+:root{
+  --ink:#16191c;
+  --steel:#22282e;
+  --steel-2:#2d353d;
+  --plate:#eef0f2;
+  --paper:#ffffff;
+  --line:#d3d8dd;
+  --muted:#5b646d;
+  --saffron:#e8590c;
+  --saffron-dark:#c2470a;
+  --vermilion:#c92a2a;
+  --wa:#1f9e55;
+  --display:"Barlow Condensed","Mukta Vaani","Arial Narrow",sans-serif;
+  --body:"Hind Vadodara","Mukta Vaani",system-ui,sans-serif;
+  --gu-display:"Mukta Vaani","Hind Vadodara",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+
+/* language switching */
+.lang-en .gu{display:none!important}
+.lang-gu .en{display:none!important}
+.lang-gu h1,.lang-gu h2,.lang-gu h3,.lang-gu .kicker{font-family:var(--gu-display);text-transform:none;letter-spacing:0}
+
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.05;text-wrap:balance;margin:0}
+h2{font-size:clamp(34px,4.6vw,52px);text-transform:uppercase;letter-spacing:.01em}
+.kicker{font:600 14px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--saffron);margin:0 0 14px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--steel);color:#fff;border-bottom:3px solid var(--saffron)}
+.bar{display:flex;align-items:center;gap:24px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.logo .om{font:700 40px/1 var(--gu-display);color:#ff8a3d;transform:translateY(-2px)}
+.logo .name{font:700 22px/1 var(--display);letter-spacing:.06em;text-transform:uppercase}
+.logo .name small{display:block;font:500 12px/1.3 var(--body);letter-spacing:.08em;color:#aab3bc}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;font:600 16px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;color:#d7dde2}
+.lang-gu nav a{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:15px}
+nav a:hover{color:#fff}
+.langbtn{border:1px solid #56616b;background:transparent;color:#fff;border-radius:4px;padding:7px 12px;font:600 14px/1 var(--body);cursor:pointer}
+.langbtn:hover{border-color:var(--saffron)}
+@media (max-width:860px){nav{display:none}}
+
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:4px;text-decoration:none;font:600 17px/1 var(--body);border:2px solid transparent;cursor:pointer}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-call{background:var(--saffron);color:#fff}
+.btn-call:hover{background:var(--saffron-dark)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{filter:brightness(.92)}
+.btn-ghost{border-color:currentColor;color:inherit}
+
+/* hero */
+.hero{background:var(--steel);color:#fff}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:0;align-items:stretch}
+.hero-copy{padding:64px 48px 64px 0;display:flex;flex-direction:column;justify-content:center;gap:22px}
+.hero h1{font-size:clamp(42px,5.6vw,72px);text-transform:uppercase}
+.hero h1 em{font-style:normal;color:#ff8a3d}
+.hero p{margin:0;color:#c9d0d6;max-width:34em;font-size:18px}
+.hero-photo{position:relative;min-height:420px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;padding:0;margin:6px 0 0;list-style:none;font-size:15px;color:#aab3bc}
+.facts b{color:#fff;font-weight:600}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:40px 0 36px}
+  .hero-photo{min-height:260px;margin-inline:-20px}
+}
+
+section{padding:88px 0}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:24px 48px;align-items:end;margin-bottom:44px}
+.head p{margin:0;color:var(--muted);max-width:36em}
+@media (max-width:860px){.head{grid-template-columns:1fr}section{padding:64px 0}}
+
+/* services */
+.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);column-gap:56px;border-top:2px solid var(--ink)}
+.svc li{display:grid;grid-template-columns:56px 1fr;gap:4px 16px;padding:24px 0;border-bottom:1px solid var(--line)}
+.svc .n{font:700 28px/1 var(--display);color:var(--saffron);font-variant-numeric:tabular-nums;grid-row:span 2;padding-top:2px}
+.svc h3{font-size:25px;text-transform:uppercase;letter-spacing:.01em}
+.lang-gu .svc h3{font-size:22px}
+.svc p{margin:0;color:var(--muted);font-size:16px}
+@media (max-width:760px){.svc{grid-template-columns:1fr}}
+
+/* work gallery */
+.work{background:var(--plate)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 16px;font:500 15px/1 var(--body);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.gsec{margin-top:44px}
+.gsec:first-of-type{margin-top:0}
+.gsec h3{font-size:26px;text-transform:uppercase;display:flex;align-items:baseline;gap:12px;padding-bottom:12px;margin-bottom:16px;border-bottom:2px solid var(--ink)}
+.gsec h3 small{font:500 14px/1 var(--body);color:var(--muted);text-transform:none;letter-spacing:0}
+.lang-gu .gsec h3{font-size:23px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.grid button{all:unset;cursor:zoom-in;display:block;aspect-ratio:1/1;overflow:hidden;background:#cfd4d8;border-radius:2px}
+.grid button:focus-visible{outline:3px solid var(--saffron);outline-offset:2px}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.grid button:hover img{transform:scale(1.04)}
+.gsec[hidden]{display:none}
+@media (max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.grid{grid-template-columns:repeat(2,1fr);gap:8px}}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,10,12,.92);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.open{display:flex}
+.lb img{max-width:min(92vw,900px);max-height:86vh;width:auto;height:auto;border-radius:2px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:4px;font:600 22px/1 var(--body);width:48px;height:48px;cursor:pointer}
+.lb .x{top:16px;right:16px}.lb .pv{left:12px;top:50%}.lb .nx{right:12px;top:50%}
+.lb .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#c9d0d6;font-size:15px}
+
+/* jali */
+.jali{background:var(--steel);color:#fff}
+.jali .head p{color:#b8c0c7}
+.panels{display:flex;gap:18px;overflow-x:auto;padding:8px 2px 18px;scroll-snap-type:x mandatory}
+.panels figure{margin:0;flex:none;scroll-snap-align:start;background:#e9ecee;padding:14px;border-radius:2px}
+.panels img{height:300px;width:auto}
+.panels figcaption{font:500 13px/1.3 var(--body);color:#3c454d;margin-top:10px;font-variant-numeric:tabular-nums}
+.sizes{display:flex;flex-wrap:wrap;gap:10px 32px;margin-top:28px;padding-top:22px;border-top:1px solid #435059;font-size:15px;color:#c9d0d6}
+.sizes b{color:#fff;font-weight:600;font-variant-numeric:tabular-nums}
+
+.owner{margin:0 0 22px;padding:16px 0;border-top:1px solid #39424b;border-bottom:1px solid #39424b}
+.owner b{display:block;font:700 24px/1.1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.owner span{color:#aab3bc;font-size:15px}
+
+/* contact */
+.contact{background:var(--ink);color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact address{font-style:normal;font-size:19px;line-height:1.55;margin:18px 0 22px}
+.contact .meta{color:#aab3bc;font-size:15px;margin:0}
+form{display:grid;gap:14px;background:var(--steel-2);padding:28px;border-radius:4px}
+label{display:grid;gap:6px;font-size:15px;color:#d7dde2}
+input,select,textarea{font:400 16px/1.4 var(--body);padding:12px 14px;border:1px solid #4a5560;border-radius:4px;background:#1b2025;color:#fff;width:100%}
+textarea{min-height:96px;resize:vertical}
+.form-note{font-size:14px;color:#aab3bc;margin:0}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+footer{background:#0f1214;color:#8d979f;font-size:14px;padding:26px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
+
+/* mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;grid-template-columns:1fr 1fr;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px;color:#fff;text-decoration:none;font:600 16px/1 var(--body)}
+.mbar svg{width:20px;height:20px}
+@media (max-width:860px){.mbar{display:grid}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Om Fabrication home">
+      <span class="om" aria-hidden="true">ૐ</span>
+      <span class="name"><span class="en">Fabrication</span><span class="gu">ફેબ્રીકેશન</span><small>Patan · Gujarat</small></span>
+    </a>
+    <nav aria-label="Sections">
+      <a href="#services"><span class="en">Services</span><span class="gu">સેવાઓ</span></a>
+      <a href="#work"><span class="en">Our work</span><span class="gu">અમારું કામ</span></a>
+      <a href="#jali"><span class="en">Jali designs</span><span class="gu">જાળી ડિઝાઇન</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="gu">સંપર્ક</span></a>
+    </nav>
+    <button class="langbtn" id="langbtn" type="button" aria-label="Switch language"><span class="en">ગુજરાતી</span><span class="gu">English</span></button>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker"><span class="en">Om Fabrication · Patan</span><span class="gu">ૐ ફેબ્રીકેશન · પાટણ</span></p>
+      <h1>
+        <span class="en">Sheds, railings, windows <em>and gates</em>, built in Patan</span>
+        <span class="gu">શેડ, રેલિંગ, બારી <em>અને ગેટ</em>, પાટણમાં તૈયાર</span>
+      </h1>
+      <p>
+        <span class="en">Steel, aluminium and glass work for homes, shops, societies and factories. Our own team measures, makes and fits every job.</span>
+        <span class="gu">ઘર, દુકાન, સોસાયટી અને ફેક્ટરી માટે સ્ટીલ, એલ્યુમિનિયમ અને કાચનું કામ. માપ લેવાથી ફિટિંગ સુધીનું બધું કામ અમારી પોતાની ટીમ કરે છે.</span>
+      </p>
+      <div class="btns">
+        <a class="btn btn-call" href="tel:+919825017324">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          <span class="en">Call 98250 17324</span><span class="gu">ફોન 98250 17324</span>
+        </a>
+        <a class="btn btn-wa" href="https://wa.me/919825017324?text=Hello%20Om%20Fabrication%2C%20I%20would%20like%20a%20quote." rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg>
+          <span class="en">WhatsApp for a quote</span><span class="gu">ભાવ માટે WhatsApp કરો</span>
+        </a>
+      </div>
+      <ul class="facts">
+        <li><b>GST</b> <span class="en">registered</span><span class="gu">રજિસ્ટર્ડ</span></li>
+        <li><b>53+</b> <span class="en">designs to choose from</span><span class="gu">પસંદગી માટે ડિઝાઇન</span></li>
+        <li><b>Patan</b> <span class="en">and nearby towns</span><span class="gu">અને આસપાસના ગામો</span></li>
+      </ul>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero.jpg" alt="White tension-fabric canopy over a factory walkway, built by Om Fabrication" fetchpriority="high">
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker"><span class="en">What we make</span><span class="gu">અમે શું બનાવીએ છીએ</span></p>
+        <h2><span class="en">Services</span><span class="gu">અમારી સેવાઓ</span></h2>
+      </div>
+      <p><span class="en">From a single window grill to a full factory shed. Tell us the size and site, and we will visit, measure and give you a price.</span><span class="gu">એક બારીની ગ્રીલથી લઈને આખા ફેક્ટરી શેડ સુધી. સાઇઝ અને જગ્યા જણાવો, અમે આવીને માપ લઈ ભાવ આપીશું.</span></p>
+    </div>
+    <ol class="svc">
+      <li><span class="n">01</span><h3><span class="en">MS sheds &amp; roofing</span><span class="gu">M.S. શેડ અને છત</span></h3><p><span class="en">Industrial sheds, godowns, colour-coated sheet roofing and false ceilings.</span><span class="gu">ઔદ્યોગિક શેડ, ગોડાઉન, કલર કોટેડ પતરાની છત અને ફોલ સીલિંગ.</span></p></li>
+      <li><span class="n">02</span><h3><span class="en">Tension canopies</span><span class="gu">ટેન્શન સ્ટ્રક્ચર</span></h3><p><span class="en">Car parking shades, walkways and entrance canopies in tension fabric.</span><span class="gu">કાર પાર્કિંગ શેડ, વોકવે અને એન્ટ્રન્સ માટે ટેન્શન ફેબ્રિક કેનોપી.</span></p></li>
+      <li><span class="n">03</span><h3><span class="en">SS &amp; glass railings</span><span class="gu">S.S. અને કાચની રેલિંગ</span></h3><p><span class="en">Staircase, balcony and terrace railings in stainless steel, glass and wood.</span><span class="gu">સીડી, બાલ્કની અને ધાબા માટે સ્ટેનલેસ સ્ટીલ, કાચ અને લાકડાની રેલિંગ.</span></p></li>
+      <li><span class="n">04</span><h3><span class="en">Aluminium windows &amp; partitions</span><span class="gu">એલ્યુમિનિયમ બારી અને પાર્ટીશન</span></h3><p><span class="en">Sliding windows, office partitions, ACP cladding and glazing.</span><span class="gu">સ્લાઇડિંગ બારી, ઓફિસ પાર્ટીશન, ACP અને ગ્લેઝિંગનું કામ.</span></p></li>
+      <li><span class="n">05</span><h3><span class="en">Gates, grills &amp; laser-cut jali</span><span class="gu">ગેટ, ગ્રીલ અને લેસર કટ જાળી</span></h3><p><span class="en">Main gates, safety doors and window grills, plain or with designer jali panels.</span><span class="gu">મેઇન ગેટ, લોખંડના બારણા અને બારીની જાળી, સાદી અથવા ડિઝાઇનર જાળી સાથે.</span></p></li>
+      <li><span class="n">06</span><h3><span class="en">Rolling &amp; zebra blinds</span><span class="gu">રોલિંગ અને ઝીબ્રા પડદા</span></h3><p><span class="en">Window blinds for homes and offices, measured and fitted.</span><span class="gu">ઘર અને ઓફિસ માટે બારીના પડદા, માપ લઈને ફિટિંગ.</span></p></li>
+      <li><span class="n">07</span><h3><span class="en">SS furniture</span><span class="gu">S.S. ફર્નિચર</span></h3><p><span class="en">Dining tables, kitchen trolleys, sofa sets and teapoys.</span><span class="gu">ડાઇનિંગ ટેબલ, કિચન ટ્રોલી, સોફા સેટ અને ટીપોઈ.</span></p></li>
+      <li><span class="n">08</span><h3><span class="en">Children's play equipment</span><span class="gu">બાળકોના રમતના સાધનો</span></h3><p><span class="en">Slides, swings and play sets for schools, societies and gardens.</span><span class="gu">શાળા, સોસાયટી અને બગીચા માટે લપસણી, હીંચકા અને પ્લે સેટ.</span></p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker"><span class="en">Work &amp; designs</span><span class="gu">કામ અને ડિઝાઇન</span></p>
+        <h2><span class="en">Our work</span><span class="gu">અમારું કામ</span></h2>
+      </div>
+      <p><span class="en">Pick the style you like and send us the photo on WhatsApp. Tap any picture to see it bigger.</span><span class="gu">તમને ગમતી ડિઝાઇન પસંદ કરો અને ફોટો WhatsApp પર મોકલો. મોટો જોવા માટે ફોટા પર ટેપ કરો.</span></p>
+    </div>
+    <div class="chips" role="group" aria-label="Filter photos" id="chips"></div>
+    <div id="gallery"></div>
+  </div>
+</section>
+
+<section id="jali" class="jali">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker"><span class="en">Laser-cut panels</span><span class="gu">લેસર કટ પેનલ</span></p>
+        <h2><span class="en">Jali designs</span><span class="gu">જાળી ડિઝાઇન</span></h2>
+      </div>
+      <p><span class="en">Choose a design for your gate, door, grill or partition. Each panel is cut in MS or SS sheet to your size. Tell us the design number on WhatsApp.</span><span class="gu">ગેટ, દરવાજા, ગ્રીલ કે પાર્ટીશન માટે ડિઝાઇન પસંદ કરો. દરેક પેનલ તમારી સાઇઝ મુજબ M.S. અથવા S.S. શીટમાં કાપવામાં આવે છે. WhatsApp પર ડિઝાઇન નંબર જણાવો.</span></p>
+    </div>
+    <div class="panels" id="panels" tabindex="0" aria-label="Jali design catalogue, scroll sideways"></div>
+    <div class="sizes">
+      <span><span class="en">Common sizes:</span><span class="gu">સામાન્ય સાઇઝ:</span></span>
+      <span><b>1 × 4 ft</b> (305 × 1219 mm)</span>
+      <span><b>1.5 × 4 ft</b> (457 × 1219 mm)</span>
+      <span><b>1 × 5 ft</b> (305 × 1524 mm)</span>
+      <span><span class="en">Any size cut to order</span><span class="gu">ઓર્ડર મુજબ કોઈપણ સાઇઝ</span></span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="kicker"><span class="en">Visit or call</span><span class="gu">મુલાકાત લો અથવા ફોન કરો</span></p>
+      <h2><span class="en">Contact</span><span class="gu">સંપર્ક</span></h2>
+      <address>
+        <span class="en">Om Fabrication<br>Jay Plaza Complex, Padmanabh Chokdi<br>Opp. Gruhkamal Society, Patan<br>Gujarat 384265</span>
+        <span class="gu">ૐ ફેબ્રીકેશન<br>જય પ્લાઝા, પદમનાથ ચોકડી<br>ગૃહકમલ સોસાયટી ની સામે, પાટણ<br>ગુજરાત 384265</span>
+      </address>
+      <p class="owner"><b><span class="en">Rakesh A. Patel</span><span class="gu">રાકેશ એ. પટેલ</span></b><span><span class="en">Owner</span><span class="gu">માલિક</span> · 98250 17324</span></p>
+      <div class="btns">
+        <a class="btn btn-call" href="tel:+919825017324"><span class="en">Call 98250 17324</span><span class="gu">ફોન 98250 17324</span></a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Om+Fabrication+Patan+Jay+Plaza" rel="noopener"><span class="en">Open in Google Maps</span><span class="gu">Google Maps માં ખોલો</span></a>
+      </div>
+    </div>
+    <form id="quote" novalidate>
+      <h3 style="font-size:26px;text-transform:uppercase"><span class="en">Ask for a price</span><span class="gu">ભાવ પૂછો</span></h3>
+      <label for="q-name"><span class="en">Your name</span><span class="gu">તમારું નામ</span><input id="q-name" name="name" autocomplete="name"></label>
+      <label for="q-work"><span class="en">Type of work</span><span class="gu">કામનો પ્રકાર</span>
+        <select id="q-work" name="work">
+          <option>MS shed / roofing</option>
+          <option>Tension canopy / parking shade</option>
+          <option>SS / glass railing</option>
+          <option>Aluminium window / partition</option>
+          <option>Gate / grill / laser-cut jali</option>
+          <option>Blinds</option>
+          <option>SS furniture</option>
+          <option>Children's play equipment</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label for="q-place"><span class="en">Site location</span><span class="gu">સાઇટ ક્યાં છે</span><input id="q-place" name="place" placeholder="Patan, Siddhpur, Mehsana…"></label>
+      <label for="q-msg"><span class="en">Size or details</span><span class="gu">સાઇઝ અથવા વિગત</span><textarea id="q-msg" name="msg"></textarea></label>
+      <a class="btn btn-wa" id="q-send" href="https://wa.me/919825017324" rel="noopener"><span class="en">Send on WhatsApp</span><span class="gu">WhatsApp પર મોકલો</span></a>
+      <p class="form-note"><span class="en">Opens WhatsApp with your message ready to send to Rakesh A. Patel.</span><span class="gu">તમારો મેસેજ તૈયાર કરીને WhatsApp ખુલશે.</span></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Om Fabrication, Patan</span>
+    <span>GSTIN 24APLPP4320A2ZC</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" type="button" aria-label="Close">×</button>
+  <button class="pv" type="button" aria-label="Previous photo">‹</button>
+  <img id="lb-img" alt="">
+  <button class="nx" type="button" aria-label="Next photo">›</button>
+  <p class="cap" id="lb-cap"></p>
+</div>
+
+<div class="mbar">
+  <a href="tel:+919825017324" style="background:var(--saffron)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="en">Call</span><span class="gu">ફોન</span></a>
+  <a href="https://wa.me/919825017324" style="background:var(--wa)" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){root.classList.remove('lang-en','lang-gu');root.classList.add('lang-'+l);root.lang=l==='gu'?'gu':'en';try{localStorage.setItem('omfab-lang',l)}catch(e){}}
+  try{var saved=localStorage.getItem('omfab-lang');if(saved)setLang(saved)}catch(e){}
+  document.getElementById('langbtn').addEventListener('click',function(){setLang(root.classList.contains('lang-en')?'gu':'en')});
+
+  // gallery: one even square grid per section
+  function r(a,b){var o=[];for(var i=a;i<=b;i++)o.push('t'+String(i).padStart(2,'0'));return o}
+  var SECTIONS=[
+    {id:'sheds',en:'Sheds & tension canopies',gu:'શેડ અને ટેન્શન કેનોપી',img:['canopy-1','canopy-4','canopy-3','canopy-2','shed-1']},
+    {id:'stairs',en:'Staircase railings',gu:'સીડીની રેલિંગ',img:['rail-1','rail-2','rail-3'].concat(r(1,9))},
+    {id:'balcony',en:'Glass railings & balconies',gu:'કાચની રેલિંગ અને બાલ્કની',img:r(26,37)},
+    {id:'windows',en:'Aluminium windows',gu:'એલ્યુમિનિયમ બારી',img:r(10,19)},
+    {id:'partitions',en:'Glass partitions & office cabins',gu:'કાચના પાર્ટીશન અને ઓફિસ કેબિન',img:['glass-1','glass-2','glass-3','t20','t21','t22']},
+    {id:'interiors',en:'Interiors & doors',gu:'ઇન્ટિરિયર અને દરવાજા',img:['int-1','int-2','int-3','int-4','door-1','t23','t24','t25']},
+    {id:'facades',en:'Building fronts, ACP & glazing',gu:'બિલ્ડિંગ એલિવેશન, ACP અને ગ્લેઝિંગ',img:r(38,53)}
+  ];
+  var gal=document.getElementById('gallery'),chipsEl=document.getElementById('chips'),all=[];
+  function chip(id,en,gu,on){var b=document.createElement('button');b.className='chip';b.type='button';b.dataset.f=id;b.setAttribute('aria-pressed',on);b.innerHTML='<span class="en">'+en+'</span><span class="gu">'+gu+'</span>';chipsEl.appendChild(b)}
+  chip('all','All','બધું',true);
+  SECTIONS.forEach(function(sec){
+    chip(sec.id,sec.en,sec.gu,false);
+    var d=document.createElement('div');d.className='gsec';d.dataset.c=sec.id;
+    var h='<h3><span class="en">'+sec.en+'</span><span class="gu">'+sec.gu+'</span><small>'+sec.img.length+' <span class="en">photos</span><span class="gu">ફોટા</span></small></h3><div class="grid">';
+    sec.img.forEach(function(n){var i=all.length;all.push({src:'img/g/'+n+'.jpg',en:sec.en,gu:sec.gu});
+      h+='<button type="button" data-i="'+i+'" aria-label="View larger: '+sec.en+'"><img src="img/g/'+n+'.jpg" alt="'+sec.en+'" loading="lazy" width="800" height="800"></button>'});
+    d.innerHTML=h+'</div>';gal.appendChild(d);
+  });
+  chipsEl.addEventListener('click',function(e){var c=e.target.closest('.chip');if(!c)return;var f=c.dataset.f;
+    chipsEl.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+    gal.querySelectorAll('.gsec').forEach(function(s){s.hidden=!(f==='all'||s.dataset.c===f)})});
+  // lightbox
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap'),cur=0,last=null;
+  function show(i){cur=(i+all.length)%all.length;li.src=all[cur].src;li.alt=all[cur].en;lc.textContent=(root.classList.contains('lang-gu')?all[cur].gu:all[cur].en)+' · '+(cur+1)+' / '+all.length}
+  gal.addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(!b)return;last=b;show(+b.dataset.i);lb.classList.add('open');lb.querySelector('.x').focus()});
+  function close(){lb.classList.remove('open');if(last)last.focus()}
+  lb.querySelector('.x').addEventListener('click',close);
+  lb.querySelector('.pv').addEventListener('click',function(){show(cur-1)});
+  lb.querySelector('.nx').addEventListener('click',function(){show(cur+1)});
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+
+  // jali catalogue
+  var p=document.getElementById('panels');
+  for(var i=1;i<=11;i++){
+    var fig=document.createElement('figure');
+    fig.innerHTML='<img src="img/jali-'+i+'.png" alt="Laser-cut jali design '+i+'" loading="lazy"><figcaption><span class="en">Design</span><span class="gu">ડિઝાઇન</span> J-'+String(i).padStart(2,'0')+'</figcaption>';
+    p.appendChild(fig);
+  }
+
+  // WhatsApp quote message
+  var send=document.getElementById('q-send');
+  function upd(){
+    var v=function(id){return document.getElementById(id).value.trim()};
+    var t='Hello Om Fabrication, I would like a quote.\nName: '+(v('q-name')||'-')+'\nWork: '+v('q-work')+'\nSite: '+(v('q-place')||'-')+'\nDetails: '+(v('q-msg')||'-');
+    send.href='https://wa.me/919825017324?text='+encodeURIComponent(t);
+  }
+  document.getElementById('quote').addEventListener('input',upd);
+  document.getElementById('quote').addEventListener('submit',function(e){e.preventDefault()});
+  upd();
+})();
+</script>
+</body>
+</html>
